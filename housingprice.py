@@ -16,7 +16,7 @@ def house_model():
         layers.Dense(1, input_shape=(1,))
     ])
    
-    model.compile(optimizer='adam', loss='mean_squared_error')
+    model.compile(optimizer='sgd', loss='mean_squared_error')
 
     model.fit(xs, ys, epochs=1000)
     
