@@ -32,7 +32,7 @@ class myCallback(tf.keras.callbacks.Callback):
                 print("\nReached 99% accuracy so cancelling training!")
                 
                 # Stop training once the above condition is met
-                self.model.stop_learning=True
+                self.model.stop_training=True
 
 def train_mnist(x_train, y_train):
 
